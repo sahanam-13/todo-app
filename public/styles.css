@@ -1,0 +1,84 @@
+/* Custom CSS styles */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+  }
+  
+  #todo-input {
+    border-radius: 4px;
+  }
+  
+  /* Task item styles */
+  .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .task-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  
+  .task-actions button:hover {
+    text-decoration: underline;
+  }
+  
+  .task-text {
+    flex: 1; /* Flexbox to expand the text area */
+  }
+  
+  /* Checkbox styles */
+  .task-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .task-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+  }
+  
+  .task-checkbox:hover .checkmark {
+    background-color: #f3f3f3;
+  }
+  
+  .task-checkbox input:checked ~ .checkmark {
+    background-color: #007bff;
+  }
+  
+  /* Completed task style */
+  .completed .task-text {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
