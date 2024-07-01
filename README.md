@@ -39,24 +39,6 @@ Use your PC's IP address (e.g., http://192.168.x.x:3000) to access the applicati
 Persistent Storage
 
 Tasks are saved automatically using local storage. They persist across page reloads.
-Folder Structure
-java
-Copy code
-todo-app/
-├── public/
-│   └── index.html
-├── src/
-│   ├── components/
-│   │   ├── TaskInput.js
-│   │   ├── TaskList.js
-│   │   └── TaskItem.js
-│   ├── redux/
-│   │   ├── actions.js
-│   │   ├── reducers.js
-│   │   └── store.js
-│   ├── App.js
-│   └── index.js
-└── package.json
 
 Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
